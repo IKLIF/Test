@@ -1,5 +1,11 @@
-x=10
-y=22
-print(x+y)
-print(x*y)
-print("helloy word")
+import telebot
+
+print("start")
+
+bot = telebot.TeleBot('7322937059:AAHWbYHdmMXhZxNuBK8ujPC8agYuFScxTkw')
+
+@bot.message_handler(commands=['start'])
+def handle_start(message):
+    bot.send_message(message.chat.id, "Здорова, брат! Я бот. Как сам?")
+
+bot.polling(none_stop=True)
