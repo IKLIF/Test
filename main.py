@@ -79,7 +79,7 @@ class SocketConn(websocket.WebSocketApp):
 
 
 
-threading.Thread(target=SocketConn, args=('wss://fstream.binance.com/ws/oxtusdt@depth@500ms',)).start()#<symbol>@forceOrder
+threading.Thread(target=SocketConn, args=('wss://fstream.binance.com/ws/ethfiusdt@depth@500ms',)).start()#<symbol>@forceOrder
 #threading.Thread(target=SocketConn, args=('wss://fstream.binance.com/stream?streams=nknusdt@depth@500ms/btcusdt@markPrice',)).start()#<symbol>@forceOrder
 
 
